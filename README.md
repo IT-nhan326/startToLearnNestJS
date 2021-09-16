@@ -5,7 +5,7 @@
 3. []
 
 
-### [Reference]
+### [Reference](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#reference-)
 
 
 # [NestJS](https://nestjs.com/)
@@ -25,6 +25,8 @@
 - The [Routing]() mechanism control which `Controller` receive which ***Request***
 - Each controller can has more than 1 `Route`, different `Route` can perfome different actions
 - Create basic `Controller` by using `classes` and ***DECORATORS***
+
+### 1. Routing : 
 
 
 
