@@ -1,6 +1,6 @@
 # Main Contain
 1. [NestJs Introduction](https://github.com/IT-nhan326/startToLearnNestJS#nestjs)
-2. [NestJS Controllers]()
+2. [NestJS Controllers](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#controllers)
 
 
 # [NestJS](https://nestjs.com/)
