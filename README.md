@@ -1,6 +1,11 @@
+## _For personal Study purpose only_
 # Main Contain
-1. [NestJs Introduction](https://github.com/IT-nhan326/startToLearnNestJS#nestjs)
+1. [NestJS Introduction](https://github.com/IT-nhan326/startToLearnNestJS#nestjs)
 2. [NestJS Controllers](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#controllers)
+3. []
+
+
+### [Reference]
 
 
 # [NestJS](https://nestjs.com/)
@@ -13,7 +18,16 @@
   * The Architecture is hightly inspired by [Angular](https://angular.io/)
 
 ## [Controllers](https://docs.nestjs.com/controllers)
-![controllers](https://docs.nestjs.com/assets/Controllers_1.png)
-- Responsible for handling incoming **REQUESTs** and returning **RESPONSEs** to the client
+![Controllers](https://docs.nestjs.com/assets/Controllers_1.png)
+
+- Responsible for handling incoming ***Requests*** and returning ***Responses*** to the client
+- A controllers purpose is to receive ***SPECIFIC REQUESTS*** for the application
+- The [Routing]() mechanism control which `Controller` receive which ***Request***
+- Each controller can has more than 1 `Route`, different `Route` can perfome different actions
+- Create basic `Controller` by using `classes` and ***DECORATORS***
 
 
+
+
+## Reference : 
+1. https://nestjs.com
