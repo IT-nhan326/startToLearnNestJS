@@ -81,7 +81,15 @@ ________________________________________________________________________________
 - Use `@Injectable()` decorator, which declares that `Services` is a class that can be managed by Nest IoC (Inversion of Control) container
 
 ### 2. Dependency Injection : 
-- 
+- Dependencies are services or object that a class needs to perfome its function.
+- Dependency Injection(DI) is a design pattern in which a class requests dependencies from external sources rather than creating them
+- `@Injectable()` decorator specifies that Nest can use this class in the DI system.
+- `@Optional()` - Optional providers : when your class depend on "configuration object", but if none is passes, the default values should be used => optional dependency would helps not leading to errors.
+- `@Inject` - Property-based injection : If your top-level class depends on either one or multiple providers, passing them to the top-level class by calling `super()` in sub-classes is not recommended => use `@Inject`
+
+
+
+
 
 
 ## [Modules](https://docs.nestjs.com/modules)
