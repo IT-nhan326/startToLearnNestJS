@@ -3,7 +3,7 @@
 1. [NestJS Introduction](https://github.com/IT-nhan326/startToLearnNestJS#nestjs)
 2. [NestJS Life-Cycle Events](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#nestjs-life-cycle-events)(Unfinished)
 3. [Controllers-Route-Decorators](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#controllers)
-4. []
+4. [Provider-Service](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#provider)
 
 
 ### [Reference](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#reference-)
@@ -32,7 +32,7 @@
 
 ### 2. Lifecycle Events : 
 
-![LifecycleEvents]()
+![LifecycleEvents](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/LifecycleEvents.JPG)
 
 1. Nest calls registered "lifecycle hook methods" on `modules`, `injectable` and `controllers`
 
@@ -76,6 +76,12 @@ ________________________________________________________________________________
 - `Providers` are extra services which you can `Injected` to `Controller` or others `Providers` to provide certain ***FUNCTIONALITIES***
 - Can use `Providers` to fetch data from Database then `Controller` can use the services from that and so it keep `Controller` clean and focus
 
+### 1. Service : 
+- `Services` responsible for data storage and retrieval, and is designed to be used by `Controllers`
+- Use `@Injectable()` decorator, which declares that `Services` is a class that can be managed by Nest IoC (Inversion of Control) container
+
+### 2. Dependency Injection : 
+- 
 
 
 ## [Modules]()
