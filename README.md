@@ -93,6 +93,8 @@ ________________________________________________________________________________
 
 
 ## [Modules](https://docs.nestjs.com/modules)
+![Modules-tree](https://docs.nestjs.com/assets/Modules_1.png)
+
 - `Module` can import into another `Module` => link all App together
 - `Modules` splitted by ***Features*** in the App
 - `@Modules` is a `Decorator` that that should be attached to a **CLASS**. Then pass an Object to the `Decorator`
