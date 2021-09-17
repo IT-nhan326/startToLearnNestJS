@@ -52,13 +52,13 @@ ________________________________________________________________________________
 
 ![Controllers-code](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/%40Controller-pathDirecting.JPG)
 
-1. **Route** : 
+### 1. **Route** : 
     - is the argument of `Decorator` ('path') and ('path2')
     - without "Routing" - "no argument inside ()" of `decorator` => Nest will automatically direct the path to "your-domain.com/"
     - => @Get will be triggered when client access the "your-domain.com/path/path2" as in Nest "Routing" will follow from "your-domain.com/" to @Controller("path") to @Get("path2")
     - => Callout to getHello() to execute getHello() method inside `service`(appService.getHello())
 
-2. **Decorator** : @Controller, @Get ... "@" + name
+### 2. **Decorator** : @Controller, @Get ... "@" + name
     - @Reg() or @Request() : Request object. Handlers often need access to the client **REQUEST** details (inject it)
     - @Get() : Fetch resources
     - @Post() : create new records
