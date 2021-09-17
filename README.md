@@ -53,20 +53,20 @@ ________________________________________________________________________________
 ![Controllers-code](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/%40Controller-pathDirecting.JPG)
 
 ### 1. **Route** : 
-    - is the argument of `Decorator` ('path') and ('path2')
-    - without "Routing" - "no argument inside ()" of `decorator` => Nest will automatically direct the path to "your-domain.com/"
-    - => @Get will be triggered when client access the "your-domain.com/path/path2" as in Nest "Routing" will follow from "your-domain.com/" to @Controller("path") to @Get("path2")
-    - => Callout to getHello() to execute getHello() method inside `service`(appService.getHello())
+   - is the argument of `Decorator` ('path') and ('path2')
+   - without "Routing" - "no argument inside ()" of `decorator` => Nest will automatically direct the path to "your-domain.com/"
+   - => @Get will be triggered when client access the "your-domain.com/path/path2" as in Nest "Routing" will follow from "your-domain.com/" to @Controller("path") to @Get("path2")
+   - => Callout to getHello() to execute getHello() method inside `service`(appService.getHello())
 
 ### 2. **Decorator** : @Controller, @Get ... "@" + name
-    - @Reg() or @Request() : Request object. Handlers often need access to the client **REQUEST** details (inject it)
-    - @Get() : Fetch resources
-    - @Post() : create new records
-    - @Put(), @Delete(), @Patch(), @Option(), @All() : Nest provides `decorators` for all standard HTTPs methods
-    - @Header() : to specify a custom response header
-    - @Redirect(`url`,`statusCode`)
-    - @Param() : Route with static paths won't work when you need to accept **DYNAMIC DATA** as part of request(`e.g: GET/items/1` to get item with id = 1) => access with @Param
-    - @Body() : 
+   - @Reg() or @Request() : Request object. Handlers often need access to the client **REQUEST** details (inject it)
+   - @Get() : Fetch resources
+   - @Post() : create new records
+   - @Put(), @Delete(), @Patch(), @Option(), @All() : Nest provides `decorators` for all standard HTTPs methods
+   - @Header() : to specify a custom response header
+   - @Redirect(`url`,`statusCode`)
+   - @Param() : Route with static paths won't work when you need to accept **DYNAMIC DATA** as part of request(`e.g: GET/items/1` to get item with id = 1) => access with @Param
+   - @Body() : 
 
 
 
