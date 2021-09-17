@@ -1,8 +1,8 @@
 ## _For personal Study purpose only_
 # Main Contain
 1. [NestJS Introduction](https://github.com/IT-nhan326/startToLearnNestJS#nestjs)
-2. [NestJS Life-Cycle Events](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#nestjs-life-cycle-events)
-3. [Controllers](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#controllers)
+2. [NestJS Life-Cycle Events](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#nestjs-life-cycle-events)(Unfinished)
+3. [Controllers-Route-Decorators](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#controllers)
 4. []
 
 
@@ -19,6 +19,8 @@
   * The Architecture is hightly inspired by [Angular](https://angular.io/)
 
 ## [NestJS Life-Cycle Events](https://docs.nestjs.com/fundamentals/lifecycle-events)
+### 1. Lifecycle Sequence : 
+
 ![NestJS Lifecyle](https://docs.nestjs.com/assets/lifecycle-events.png)
 
 - Nest provides **Lifecycle hooks** that give visibility into key lifecycle events. and the ability to run (run registered code on `module`, `injectable` or `controller`) when they occur
@@ -28,6 +30,13 @@
   * Manage active **Connection**
   * Shutdown the application when it receives a termination signal
 
+### 2. Lifecycle Events : 
+
+![LifecycleEvents]()
+
+1. Nest calls registered "lifecycle hook methods" on `modules`, `injectable` and `controllers`
+
+_________________________________________________________________________________________________
 
 
 ## [Controllers](https://docs.nestjs.com/controllers)
@@ -43,10 +52,21 @@
 
 ![Controllers-code](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/%40Controller-pathDirecting.JPG)
 
-1. **Decorator** : @Controller, @Get ... "@" + name
-2. **Route** : 
+1. **Route** : 
     - is the argument of `Decorator` ('path') and ('path2')
-    - without routing - no argument inside () of `decorator` => Nest will automately direct the path to the main-default path
+    - without "Routing" - "no argument inside ()" of `decorator` => Nest will automatically direct the path to "your-domain.com/"
+    - => @Get will be triggered when client access the "your-domain.com/path/path2" as in Nest "Routing" will follow from "your-domain.com/" to @Controller("path") to @Get("path2")
+    - => Callout to getHello() to execute getHello() method inside `service`(appService.getHello())
+
+2. **Decorator** : @Controller, @Get ... "@" + name
+    - @Reg() or @Request() : Request object. Handlers often need access to the client **REQUEST** details (inject it)
+    - @Get() : Fetch resources
+    - @Post() : create new records
+    - @Put(), @Delete(), @Patch(), @Option(), @All() : Nest provides `decorators` for all standard HTTPs methods
+    - @Header() : to specify a custom response header
+    - @Redirect(`url`,`statusCode`)
+    - @Param() : Route with static paths won't work when you need to accept **DYNAMIC DATA** as part of request(`e.g: GET/items/1` to get item with id = 1) => access with @Param
+    - @Body() : 
 
 
 
