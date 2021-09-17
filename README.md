@@ -1,7 +1,7 @@
 ## _For personal Study purpose only_
 # Main Contain
 1. [NestJS Introduction](https://github.com/IT-nhan326/startToLearnNestJS#nestjs)
-2. [NestJS Life-Cycle Events]()
+2. [NestJS Life-Cycle Events](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#nestjs-life-cycle-events)
 3. [Controllers](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#controllers)
 4. []
 
@@ -19,6 +19,15 @@
   * The Architecture is hightly inspired by [Angular](https://angular.io/)
 
 ## [NestJS Life-Cycle Events](https://docs.nestjs.com/fundamentals/lifecycle-events)
+![NestJS Lifecyle](https://docs.nestjs.com/assets/lifecycle-events.png)
+
+- Nest provides **Lifecycle hooks** that give visibility into key lifecycle events. and the ability to run (run registered code on `module`, `injectable` or `controller`) when they occur
+- Overall lifecycle can be divided into three phases: **initializing**, **running** nad **terminating**
+- => Using lifecycle, you can plan :
+  * Appropriate initialization of `module` and `service`
+  * Manage active **Connection**
+  * Shutdown the application when it receives a termination signal
+
 
 
 ## [Controllers](https://docs.nestjs.com/controllers)
