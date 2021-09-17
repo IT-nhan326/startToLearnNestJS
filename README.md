@@ -1,8 +1,9 @@
 ## _For personal Study purpose only_
 # Main Contain
 1. [NestJS Introduction](https://github.com/IT-nhan326/startToLearnNestJS#nestjs)
-2. [NestJS Controllers](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#controllers)
-3. []
+2. [NestJS Life-Cycle Events]()
+3. [Controllers](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#controllers)
+4. []
 
 
 ### [Reference](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#reference-)
@@ -17,16 +18,27 @@
     * FRP (Functional Reactive Programming).
   * The Architecture is hightly inspired by [Angular](https://angular.io/)
 
+## [NestJS Life-Cycle Events](https://docs.nestjs.com/fundamentals/lifecycle-events)
+
+
 ## [Controllers](https://docs.nestjs.com/controllers)
 ![Controllers](https://docs.nestjs.com/assets/Controllers_1.png)
 
 - Responsible for handling incoming ***Requests*** and returning ***Responses*** to the client
 - A controllers purpose is to receive ***SPECIFIC REQUESTS*** for the application
 - The [Routing]() mechanism control which `Controller` receive which ***Request***
-- Each controller can has more than 1 `Route`, different `Route` can perfome different actions
+- Each controller can has more than 1 ***ROUTE***, different ***ROUTE*** can perfome different actions
 - Create basic `Controller` by using `classes` and `Decorator`
 
-### 1. Routing : 
+**Example** : 
+
+![Controllers-code](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/%40Controller-pathDirecting.JPG)
+
+1. **Decorator** : @Controller, @Get ... "@" + name
+2. **Route** : 
+    - is the argument of `Decorator` ('path') and ('path2')
+    - without routing - no argument inside () of `decorator` => Nest will automately direct the path to the main-default path
+
 
 
 ## [Provider](https://docs.nestjs.com/providers)
@@ -42,7 +54,7 @@
 - `Modules` splitted by ***Features*** in the App
 - `@Modules` is a `Decorator` that that should be attached to a **CLASS**. Then pass an Object to the `Decorator`
 
-![Decorator-Module]()
+![Decorator-Module](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/%40Module.JPG)
 
 
 ## Reference : 
