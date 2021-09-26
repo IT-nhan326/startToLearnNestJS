@@ -113,6 +113,18 @@ ________________________________________________________________________________
  2. **Validation** : evaluate input data and if valid, simply pass it through unchanged; otherwise, throw an exception when the data is incorrect
 - In both cases, `pipes` **"operate on the arguments"** being processed by a **"controller route handler"**.
 - Nest interposes a pipe just before a method is invoked, and **"the pipe" - "receives the arguments destined for the method and operates on them"**
+- Any transformation or validation operation takes place at that time, and the route handler is invoked with any (potentially) transformed arguments.
+
+### 1. Build-in Pipes (exported from `@nestjs/common`)
+- `ValidationPipe`
+- `ParseIntPipe`, `ParseFloatPipe`, `ParseBoolPipe`, `ParseArrayPipe`, `ParseEnumPipe`
+- `ParseUUIDPipe`
+- `DefaultValuePepe`
+
+### 2. Binding Pipes
+- To use a pipe, we need to bind an instance of the pipe class to the appropriate context.
+- Example : 
+
 
 ## Reference : 
 1. https://nestjs.com
