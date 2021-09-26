@@ -6,7 +6,7 @@
 4. [Provider-Service](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#provider)
 5. [Middleware](https://docs.nestjs.com/middleware)
 6. [Exception-filters](https://docs.nestjs.com/exception-filters)
-7. [Pipe](https://docs.nestjs.com/pipes)
+7. [Pipe](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#pipes)
 
 ### [Reference](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#reference-)
 
@@ -106,7 +106,9 @@ ________________________________________________________________________________
 
 
 ## [Pipes](https://docs.nestjs.com/pipes)
-
+![Pipes-Flow](https://docs.nestjs.com/assets/Pipe_1.png)
+- A pipe is a class annotated with the `@Injectable()` decorator. Pipes should implement the `PipeTransform` interface.
+- 
 
 ## Reference : 
 1. https://nestjs.com
