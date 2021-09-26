@@ -134,6 +134,7 @@ ________________________________________________________________________________
    2. Or an exception is thrown before the route handler is called (the exception will prevent the body of `findOne()` method from executiong)
 
 *** We can pass an "in-place instance. Passing an "inplace-instance" is useful if we want to customize the build-in pipe's behavior : 
+
 ![in-place instance Pipe](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/Note-IMG/in-place%20instance%20Pipe.JPG)
 
 
