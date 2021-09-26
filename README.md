@@ -126,15 +126,15 @@ ________________________________________________________________________________
 - To use a pipe, we need to bind an instance of the pipe class to the appropriate context.
 - Example : We want to associate the `pipe` with a particular route handler method, and make sure it runs before the method is called (binding pipe at method param level)
 
-![BindingPipe-@Param-Example]()
-![BindingPipe-@Query-Example]()
+![BindingPipe-@Param-Example](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/Note-IMG/Pipe-%40Param-example.JPG)
+![BindingPipe-@Query-Example](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/Note-IMG/Pipe-%40Query-example.JPG)
 
 => This ensure one of the follwing two conditions is true (either or) : 
    1. The param we receive in the `findOne()` method is a number
    2. Or an exception is thrown before the route handler is called (the exception will prevent the body of `findOne()` method from executiong)
 
 *** We can pass an "in-place instance. Passing an "inplace-instance" is useful if we want to customize the build-in pipe's behavior : 
-![in-place instance Pipe]()
+![in-place instance Pipe](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/Note-IMG/in-place%20instance%20Pipe.JPG)
 
 
 ## Reference : 
