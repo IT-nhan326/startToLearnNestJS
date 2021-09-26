@@ -34,7 +34,7 @@
 
 ### 2. Lifecycle Events : 
 
-![LifecycleEvents](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/LifecycleEvents.JPG)
+![LifecycleEvents](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/LifecycleEvents.JPG--)
 
 1. Nest calls registered "lifecycle hook methods" on `modules`, `injectable` and `controllers`
 
@@ -108,7 +108,11 @@ ________________________________________________________________________________
 ## [Pipes](https://docs.nestjs.com/pipes)
 ![Pipes-Flow](https://docs.nestjs.com/assets/Pipe_1.png--)
 - A pipe is a class annotated with the `@Injectable()` decorator. Pipes should implement the `PipeTransform` interface.
-- 
+- Pipes have two typical use cases :
+ 1. **Tranformation** :  transform input data to the desired form (e.g., from string to integer)
+ 2. **Validation** : evaluate input data and if valid, simply pass it through unchanged; otherwise, throw an exception when the data is incorrect
+- In both cases, `pipes` **operate on the arguments** being processed by a **controller route handler**.
+- Nest interposes a pipe just before a method is invoked, and the pipe receives the arguments destined for the method and operates on them
 
 ## Reference : 
 1. https://nestjs.com
