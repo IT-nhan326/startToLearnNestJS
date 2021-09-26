@@ -4,7 +4,9 @@
 2. [NestJS Life-Cycle Events](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#nestjs-life-cycle-events)(Unfinished)
 3. [Controllers-Route-Decorators](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#controllers)
 4. [Provider-Service](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#provider)
-
+5. [Middleware](https://docs.nestjs.com/middleware)
+6. [Exception-filters](https://docs.nestjs.com/exception-filters)
+7. [Pipe](https://docs.nestjs.com/pipes)
 
 ### [Reference](https://github.com/IT-nhan326/startToLearnNestJS/blob/main/README.md#reference-)
 
@@ -100,6 +102,10 @@ ________________________________________________________________________________
 - `@Modules` is a `Decorator` that that should be attached to a **CLASS**. Then pass an Object to the `Decorator`
 
 ![Decorator-Module](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/%40Module.JPG)
+
+
+
+## [Pipes](https://docs.nestjs.com/pipes)
 
 
 ## Reference : 
