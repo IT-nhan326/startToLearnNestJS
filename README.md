@@ -23,7 +23,7 @@
 ## [NestJS Life-Cycle Events](https://docs.nestjs.com/fundamentals/lifecycle-events)
 ### 1. Lifecycle Sequence : 
 
-![NestJS Lifecyle](https://docs.nestjs.com/assets/lifecycle-events.png)
+![NestJS Lifecyle](https://docs.nestjs.com/assets/lifecycle-events.png--)
 
 - Nest provides **Lifecycle hooks** that give visibility into key lifecycle events. and the ability to run (run registered code on `module`, `injectable` or `controller`) when they occur
 - Overall lifecycle can be divided into three phases: **initializing**, **running** nad **terminating**
@@ -42,7 +42,7 @@ ________________________________________________________________________________
 
 
 ## [Controllers](https://docs.nestjs.com/controllers)
-![Controllers](https://docs.nestjs.com/assets/Controllers_1.png)
+![Controllers](https://docs.nestjs.com/assets/Controllers_1.png--)
 
 - Responsible for handling incoming ***Requests*** and returning ***Responses*** to the client
 - A controllers purpose is to receive ***SPECIFIC REQUESTS*** for the application
@@ -52,7 +52,7 @@ ________________________________________________________________________________
 
 **Example** : 
 
-![Controllers-code](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/%40Controller-pathDirecting.JPG)
+![Controllers-code](https://raw.githubusercontent.com/IT-nhan326/startToLearnNestJS/main/Note-IMG/%40Controller-pathDirecting.JPG--)
 
 ### 1. **Route** : 
    - is the argument of `Decorator` ('path') and ('path2')
@@ -73,7 +73,7 @@ ________________________________________________________________________________
 
 
 ## [Provider](https://docs.nestjs.com/providers)
-![Provider](https://docs.nestjs.com/assets/Components_1.png)
+![Provider](https://docs.nestjs.com/assets/Components_1.png--)
 
 - `Providers` are extra services which you can `Injected` to `Controller` or others `Providers` to provide certain ***FUNCTIONALITIES***
 - Can use `Providers` to fetch data from Database then `Controller` can use the services from that and so it keep `Controller` clean and focus
@@ -95,7 +95,7 @@ ________________________________________________________________________________
 
 
 ## [Modules](https://docs.nestjs.com/modules)
-![Modules-tree](https://docs.nestjs.com/assets/Modules_1.png)
+![Modules-tree](https://docs.nestjs.com/assets/Modules_1.png--)
 
 - `Module` can import into another `Module` => link all App together
 - `Modules` splitted by ***Features*** in the App
@@ -106,7 +106,7 @@ ________________________________________________________________________________
 
 
 ## [Pipes](https://docs.nestjs.com/pipes)
-![Pipes-Flow](https://docs.nestjs.com/assets/Pipe_1.png)
+![Pipes-Flow](https://docs.nestjs.com/assets/Pipe_1.png--)
 - A pipe is a class annotated with the `@Injectable()` decorator. Pipes should implement the `PipeTransform` interface.
 - 
 
