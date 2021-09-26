@@ -111,8 +111,8 @@ ________________________________________________________________________________
 - Pipes have two typical use cases :
  1. **Tranformation** :  transform input data to the desired form (e.g., from string to integer)
  2. **Validation** : evaluate input data and if valid, simply pass it through unchanged; otherwise, throw an exception when the data is incorrect
-- In both cases, `pipes` **operate on the arguments** being processed by a **controller route handler**.
-- Nest interposes a pipe just before a method is invoked, and the pipe receives the arguments destined for the method and operates on them
+- In both cases, `pipes` **"operate on the arguments"** being processed by a **"controller route handler"**.
+- Nest interposes a pipe just before a method is invoked, and **"the pipe" - "receives the arguments destined for the method and operates on them"**
 
 ## Reference : 
 1. https://nestjs.com
